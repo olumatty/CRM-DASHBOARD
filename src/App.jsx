@@ -1,12 +1,13 @@
-import React from 'react'
-import Layout from './components/Layout'
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Dashboard from './pages/Dashboard';
 
-const App = () => {
-  return (
-    <div>
-     
-    </div>
-  )
-}
+const App = () => (
+  <Router>
+    <Routes>
+        <Route path = "/" element={<Dashboard/>}/>
+    </Routes>
+  </Router>
+);
 
-export default App
+export default App;

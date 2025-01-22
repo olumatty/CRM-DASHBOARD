@@ -23,9 +23,8 @@ export const Data = [
 
     {
         id:3,
-        title:"Customer",
+        title:"Customers",
         icon: Customer,
-        icon2: Right_Arrow
     },
 
     {
