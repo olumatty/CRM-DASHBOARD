@@ -11,7 +11,7 @@ const Sidebar = () => {
     <div className="bg-whit shadow-md h-screen transition-all duration-300 ease-in-out lg:w-[24%] w-16">
 
       {/* Logo Section */}
-      <div className="flex items-center justify-center lg:justify-start gap-3 py-3 px-5">
+      <div className="flex items-center justify-center lg:justify-start gap-3 py-5 px-5">
         <img src={logo} alt="Logo" className="w-8 h-8" />
         <h1 className="text-2xl font-bold hidden lg:block">
           Dashboard{" "}
