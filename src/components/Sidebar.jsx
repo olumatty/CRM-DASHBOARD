@@ -63,7 +63,7 @@ const Sidebar = () => {
       </div>
 
       {/* Profile Section */}
-      <div className="flex mt-10 mb-20 justify-center lg:justify-between">
+      <div className="flex mt-80 lg:mt-10 mb-20 justify-center lg:justify-between">
         <div className="flex gap-3 items-center lg:ml-6 lg:flex">
           <img
             src={profile}
