@@ -8,9 +8,8 @@ const Sidebar = () => {
   const [activeIndex, setActiveIndex] = useState(2);
 
   return (
-    <div className="bg-whit shadow-md h-screen transition-all duration-300 ease-in-out lg:w-[24%] w-16">
-
-      {/* Logo Section */}
+  <div className="">
+{/* Logo Section */}
       <div className="flex items-center justify-center lg:justify-start gap-3 py-5 px-5">
         <img src={logo} alt="Logo" className="w-8 h-8" />
         <h1 className="text-2xl font-bold hidden lg:block">
@@ -63,8 +62,8 @@ const Sidebar = () => {
       </div>
 
       {/* Profile Section */}
-      <div className="flex mt-80 lg:mt-10 mb-20 justify-center lg:justify-between">
-        <div className="flex gap-3 items-center lg:ml-6 lg:flex">
+      <div className="flex w-full absolute justify-center lg:justify-between mt-10">
+        <div className="flex gap-3 items-center lg:ml-6 lg:flex ">
           <img
             src={profile}
             alt="Profile"
@@ -75,7 +74,7 @@ const Sidebar = () => {
             <p className="text-[#757575] text-sm">Project Manager</p>
           </div>
         </div>
-        <img src={right_Arrow} alt="Arrow" className="w-6 h-6 mr-5 lg:w-auto lg:h-auto hidden lg:block" />
+        <img src={right_Arrow} alt="Arrow" className="w-6 h-6 lg:w-auto lg:h-auto hidden lg:block" />
       </div>
     </div>
   );

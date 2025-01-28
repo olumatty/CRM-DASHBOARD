@@ -12,7 +12,7 @@
             id:2,
             Name:"Floyd Miles",
             Company:"Yahoo",
-            Number:"(205) 555-01008",
+            Number:"(205) 555-0100",
             Email:"floyd@yahoo.com",
             Country:"Kiribati",
             Status:"Inactive"

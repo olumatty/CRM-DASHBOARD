@@ -7,8 +7,8 @@ import Active from "../assets/Active.svg";
 
 const Overview = () => {
   return (
-    <div className="px-10 mt-6">
-      <div className="lg:w-[90%] lg:h-[200px] py-10 bg-white rounded-lg grid space-y-3 lg:flex justify-around items-center shadow-lg">
+    <div className="px-6 mt-6">
+      <div className="lg:h-[200px] py-10 bg-white rounded-lg grid space-y-3 lg:flex justify-around items-center shadow-lg">
         <div className="flex items-center space-x-4 ">
           <div className="h-32 lg:h-36 w-32 lg:w-36 bg-gradient-to-br from-[#D3FFE7] to-[#EFFFF6] rounded-full flex items-center justify-center ">
             <img src={Customer} alt="" />
