@@ -35,7 +35,7 @@ const Overview = () => {
           <div>
             <h3 className="text-[#ACACAC]">Members</h3>
             <h1 className="text-4xl mt-2 text-[#333333] font-bold">1,893</h1>
-            <div className="flex mt-2 ">
+            <div className="flex mt-2 items-center ">
               <img src={Arrow_red} alt="" />
               <p className="text-[#D0004B]">
                 1% <span className="text-[#292D32]">this month</span>
