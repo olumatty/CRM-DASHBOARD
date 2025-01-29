@@ -8,27 +8,28 @@ const Sidebar = () => {
   const [activeIndex, setActiveIndex] = useState(2);
 
   return (
-  <div className="">
-{/* Logo Section */}
-      <div className="flex items-center justify-center lg:justify-start gap-3 py-5 px-5">
-        <img src={logo} alt="Logo" className="w-8 h-8" />
-        <h1 className="text-2xl font-bold hidden lg:block">
-          Dashboard{" "}
-          <span className="font-normal text-sm text-[#838383]">v.01</span>
-        </h1>
+    <div className= "w-16 md:w-64 lg:w-80 h-full bg-white fixed left-0 top-0 transition-all duration-300 ease-in-out shadow-md">
+      
+      {/* Logo & Toggle Section */}
+      <div className="flex items-center justify-between py-5 px-5">
+        <div className="flex items-center gap-3">
+          <img src={logo} alt="Logo" className="w-8 h-8" />
+          <h1 className="md:text-xl lg:text-2xl font-bold hidden md:block">
+            Dashboard <span className="font-normal text-sm text-[#838383]">v.01</span>
+          </h1>
+        </div>
+        
       </div>
 
       {/* Navigation */}
-      <ul className="mt-14 space-y-3">
+      <ul className="mt-6 space-y-2">
         {Data.map((item, id) => {
           const isActive = activeIndex === id;
           return (
             <li
               key={id}
               className={`font-medium text-[#9197B3] ${
-                isActive
-                  ? "bg-[#5932EA] text-white w-full h-12 rounded-md"
-                  : ""
+                isActive ? "bg-[#5932EA] text-white rounded-md" : ""
               }`}
               onClick={() => setActiveIndex(id)}
             >
@@ -36,7 +37,7 @@ const Sidebar = () => {
                 <div className="flex gap-6">
                   <img src={item.icon} alt={item.title} />
                   <span
-                    className={`transition-all hidden lg:block ${
+                    className={`transition-all hidden md:block ${
                       isActive ? "text-white" : "text-[#9197B3]"
                     }`}
                   >
@@ -49,32 +50,33 @@ const Sidebar = () => {
           );
         })}
       </ul>
-      {/* Upgrade Section (Hidden on smaller screens) */}
-      <div className="mt-20 mx-auto hidden lg:block">
-        <div className="h-40 w-[90%] mx-auto bg-gradient-to-br from-[#EAABF0] to-[#4623e9] rounded-lg text-center">
+
+      {/* Upgrade Section */}
+      <div className="mt-12 mx-auto hidden lg:block">
+        <div className="h-38 w-[90%] mx-auto bg-gradient-to-br from-[#EAABF0] to-[#4623e9] rounded-lg text-center">
           <p className="py-6 text-white font-medium">
-            Upgrade to PRO to get<br /> access all Features!
+            Upgrade to PRO to get <br /> access to all Features!
           </p>
-          <button className="w-[80%] h-12 text-center bg-white border rounded-full text-[#4925E9] font-bold text-[12px]">
+          <button className="w-[80%] h-10 text-center bg-white border rounded-full mb-3 text-[#4925E9] font-bold text-[12px]">
             Get Pro NOW!
           </button>
         </div>
       </div>
 
       {/* Profile Section */}
-      <div className="flex w-full absolute justify-center lg:justify-between mt-10">
-        <div className="flex gap-3 items-center lg:ml-6 lg:flex ">
+      <div className="flex w-full absolute bottom-4 justify-center lg:justify-between">
+        <div className="flex gap-3 items-center lg:ml-6">
           <img
             src={profile}
             alt="Profile"
-            className=" w-12 h-12 lg:w-18 lg:h-16 object-cover rounded-full"
+            className="w-12 h-12 md:w-14 md:h-14 lg:w-16 lg:h-16 object-cover rounded-full"
           />
-          <div className="hidden lg:block">
+          <div className="hidden md:block">
             <h3 className="font-medium">Evano</h3>
             <p className="text-[#757575] text-sm">Project Manager</p>
           </div>
         </div>
-        <img src={right_Arrow} alt="Arrow" className="w-6 h-6 lg:w-auto lg:h-auto hidden lg:block" />
+        <img src={right_Arrow} alt="Arrow" className="w-6 h-6 hidden lg:block mr-5" />
       </div>
     </div>
   );

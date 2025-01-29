@@ -7,48 +7,45 @@ import Active from "../assets/Active.svg";
 
 const Overview = () => {
   return (
-    <div className="px-6 mt-6">
-      <div className="lg:h-[200px] py-10 bg-white rounded-lg grid space-y-3 lg:flex justify-around items-center shadow-lg">
-        <div className="flex items-center space-x-4 ">
-          <div className="h-32 lg:h-36 w-32 lg:w-36 bg-gradient-to-br from-[#D3FFE7] to-[#EFFFF6] rounded-full flex items-center justify-center ">
-            <img src={Customer} alt="" />
+    <div className="px-4 md:px-6 mt-6 w-[50%] md:w-full">
+      <div className="bg-white rounded-lg shadow-lg p-6 grid gap-6 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+        {/* Total Customers */}
+        <div className="flex items-center space-x-4">
+          <div className="h-24 w-24 md:h-32 md:w-32 lg:h-36 lg:w-36 bg-gradient-to-br from-[#D3FFE7] to-[#EFFFF6] rounded-full flex items-center justify-center">
+            <img src={Customer} alt="Total Customers" />
           </div>
           <div>
-            <h3 className="text-[#ACACAC]">Total Customers</h3>
-            <h1 className="text-4xl mt-2 text-[#333333] font-bold">5,423</h1>
-            <div className="flex mt-2 ">
-              <img src={Arrow} alt="" />
-              <p className="text-[#00AC4F]">
+            <h3 className="text-[#ACACAC] text-sm md:text-base">Total Customers</h3>
+            <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold text-[#333333] mt-2">5,423</h1>
+            <div className="flex mt-2 items-center">
+              <img src={Arrow} alt="Arrow" />
+              <p className="text-[#00AC4F] text-sm md:text-base">
                 16% <span className="text-[#292D32]">this month</span>
               </p>
             </div>
           </div>
-          <div className="border-r-2">
-            <span></span>
-          </div>
         </div>
 
-        <div className="flex items-center space-x-4 ">
-          <div className="h-32 lg:h-36 w-32 lg:w-36 bg-gradient-to-br from-[#D3FFE7] to-[#EFFFF6] rounded-full flex items-center justify-center ">
-            <img src={Members} alt="" />
+        {/* Members */}
+        <div className="flex items-center space-x-4">
+          <div className="h-24 w-24 md:h-32 md:w-32 lg:h-36 lg:w-36 bg-gradient-to-br from-[#D3FFE7] to-[#EFFFF6] rounded-full flex items-center justify-center">
+            <img src={Members} alt="Members" />
           </div>
           <div>
-            <h3 className="text-[#ACACAC]">Members</h3>
-            <h1 className="text-4xl mt-2 text-[#333333] font-bold">1,893</h1>
-            <div className="flex mt-2 items-center ">
-              <img src={Arrow_red} alt="" />
-              <p className="text-[#D0004B]">
+            <h3 className="text-[#ACACAC] text-sm md:text-base">Members</h3>
+            <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold text-[#333333] mt-2">1,893</h1>
+            <div className="flex mt-2 items-center">
+              <img src={Arrow_red} alt="Arrow Red" />
+              <p className="text-[#D0004B] text-sm md:text-base">
                 1% <span className="text-[#292D32]">this month</span>
               </p>
             </div>
           </div>
-          <div className="border-r-2">
-            <span></span>
-          </div>
         </div>
 
+        {/* Active Now */}
         <div className="flex items-center space-x-4 ">
-          <div className="h-32 lg:h-36 w-32 lg:w-36 bg-gradient-to-br from-[#D3FFE7] to-[#EFFFF6] rounded-full flex items-center justify-center ">
+          <div className="h-24 w-24 md:h-32 md:w-32 lg:h-36 lg:w-36 bg-gradient-to-br from-[#D3FFE7] to-[#EFFFF6] rounded-full flex items-center justify-center">
             <img src={Active} alt="" />
           </div>
           <div>
